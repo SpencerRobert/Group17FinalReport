@@ -15,76 +15,68 @@
 
     <link rel="stylesheet" href="static/idyll_styles.css" />
 	<link rel="stylesheet" type="text/css" href="static/customstyles.css" />
+	<link rel="stylesheet" type="text/css" href="static/flipcard.css" />
   </head>
   <body>
-    <div id="idyll-mount"><div data-reactroot=""><div class="idyll-root"><div class=" idyll-text-container"></div><div class="article-header" style="background:#222222;color:#ffffff"><h1 class="hed">CS4474 Final Project Report</h1><h2 class="dek">Redesign of the &#x27;Reading Line&#x27; Chrome extension</h2><div class="byline">By: <a target="_blank" href="https://idyll-lang.org" style="color:#ffffff">Group 17</a></div><div class="idyll-pub-date">Mar 12, 2023</div></div><div class=" idyll-text-container"><h2 id="executive-summary">Executive Summary</h2><p>The project we chose to work on throughout the course of the semester was a redesign of the <a href="https://chrome.google.com/webstore/detail/readingline/bedndhimamenfipaocmhcpcickamhfnm">Reading Line</a> Chrome Extension.<br/> <br/></p><img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/FPGif.gif"/><p><br/> <br/>
- Originally, this extension was very basic. When toggled on, it rendered a semi-transparent grey line that spanned the entire width of the user’s current web page.
- This line would follow the movement of the user’s cursor until it was toggled off, in which it then disapeared until re-enabled. It was simple but made for an effective aid in 
- reading large blocks of text on webpages as it could assist the user in keeping track of the current line they were reading. Just like how it is being moved along this current 
- block of text you are reading.</p></div></div></div></div>
+    <div id="idyll-mount"><div data-reactroot=""><div class="idyll-root"><div class=" idyll-text-container"></div><div class="article-header" style="background:#222222;color:#ffffff"><h1 class="hed">CS4474 Final Project Report</h1><h2 class="dek">Redesign of the &#x27;Reading Line&#x27; Chrome extension</h2><div class="byline">By: <a target="_blank" href="https://idyll-lang.org" style="color:#ffffff">Group 17</a></div><div class="idyll-pub-date">Mar 12, 2023</div></div><div class=" idyll-text-container"><h2 id="executive-summary">Executive Summary</h2><p>The project we chose to work on throughout the course of the semester was a redesign of the <a href="https://chrome.google.com/webstore/detail/readingline/bedndhimamenfipaocmhcpcickamhfnm">Reading Line</a> Chrome Extension.<br/> </p><img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/FPGif.gif"/><p><br/>
+ In terms of user experience, this HCI artifact accomplished most of the goals we covered in the early stages of this course. 
+ It provides good utility, it is efficient to use, safe to use, easy to learn and easy to remember. However, the one goal it fails to reach is the goal of being effective to use.
+ In many scenarios this tool is not nearly as effective as it could be. The original developer created a significant constraint for users by failing to incorperate any customization options regarding the reading line.
+ This design flaw is confirmed by the existing user feedback on the chrome store - some of which is pictured below:</p>
  
- <!-- Slideshow container -->
+ <br>
+  <!-- Slideshow container -->
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 10</div>
     <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r1.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 10</div>
     <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r2.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 10</div>
     <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r3.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">4 / 10</div>
     <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r4.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">5 / 10</div>
     <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r5.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">6 / 10</div>
     <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r6.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">7 / 10</div>
     <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r7.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">8 / 10</div>
     <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r8.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">9 / 10</div>
     <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r9.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">10 / 10</div>
     <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r10.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -107,6 +99,82 @@
   <span class="dot" onclick="currentSlide(10)"></span>
 </div>
 	<script src="static/slideshow.js"></script>
-    <script src="static/idyll_index.js"></script>
+	
+<br>
+
+<p>
+In class we learned about questions we needed to ask ourselves when beginning a design project:
+</p>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <p>Are there problems with an existing product or user experience? If so, what are they?</p>
+    </div>
+    <div class="flip-card-back">
+      <p>
+	  Yes, we found that problems existed with the original product. In certain scenarios the default specifications caused the reading line to be:  
+	  </p>
+	  <ul>
+		<li>a size that is inapplicable to the text on the current webpage</li>
+		<li>a color that reduces effectiveness on the current webpage</li>
+		</ul>
+	<p>and we found that constantly lining up the reading line yourself made
+	  for a less enjoyable user experience.</p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <p>Why do you think there are problems?</p>
+    </div>
+    <div class="flip-card-back">
+      <p>
+	  We think these problems exist because of the constraint that exists on the reading line - not allowing its properties to be altered by the user.   
+	  </p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <p>What evidence do you have to support the existence of these problems?</p>
+    </div>
+    <div class="flip-card-back">
+      <p>
+	  The evidence we have to support these problems mainly consists of the user feedback that exists on the Chrome Store. We have also tested the original product and experienced the same issues that were described by other users.
+	  </p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <p>How do you think your proposed design ideas might overcome these problems?</p>
+    </div>
+    <div class="flip-card-back">
+      <p>
+	  We believed our design ideas would overcome these problems because they provided the users exactly what they asked for - which they reccomended would fix their issues. 
+	  </p>
+    </div>
+  </div>
+</div>
+
+
+ 
+ </div></div></div></div>
+ 
+
+
   </body>
 </html>
