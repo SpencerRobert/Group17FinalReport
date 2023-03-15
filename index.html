@@ -14,6 +14,7 @@
     <meta property="description" content="Interactive web report built by group 17 for our final project." />
 
     <link rel="stylesheet" href="static/idyll_styles.css" />
+	<link rel="stylesheet" type="text/css" href="static/customstyles.css" />
   </head>
   <body>
     <div id="idyll-mount"><div data-reactroot=""><div class="idyll-root"><div class=" idyll-text-container"></div><div class="article-header" style="background:#222222;color:#ffffff"><h1 class="hed">CS4474 Final Project Report</h1><h2 class="dek">Redesign of the &#x27;Reading Line&#x27; Chrome extension</h2><div class="byline">By: <a target="_blank" href="https://idyll-lang.org" style="color:#ffffff">Group 17</a></div><div class="idyll-pub-date">Mar 12, 2023</div></div><div class=" idyll-text-container"><h2 id="executive-summary">Executive Summary</h2><p>The project we chose to work on throughout the course of the semester was a redesign of the <a href="https://chrome.google.com/webstore/detail/readingline/bedndhimamenfipaocmhcpcickamhfnm">Reading Line</a> Chrome Extension.<br/> <br/></p><img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/FPGif.gif"/><p><br/> <br/>
@@ -21,6 +22,91 @@
  This line would follow the movement of the user’s cursor until it was toggled off, in which it then disapeared until re-enabled. It was simple but made for an effective aid in 
  reading large blocks of text on webpages as it could assist the user in keeping track of the current line they were reading. Just like how it is being moved along this current 
  block of text you are reading.</p></div></div></div></div>
+ 
+ <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 10</div>
+    <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r1.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 10</div>
+    <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r2.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 10</div>
+    <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 10</div>
+    <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r4.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 10</div>
+    <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r5.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 10</div>
+    <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r6.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 10</div>
+    <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r7.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 10</div>
+    <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r8.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 10</div>
+    <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r9.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 10</div>
+    <img src="https://raw.githubusercontent.com/SpencerRobert/Group17FinalReport/main/.github/images/r10.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+	<script src="static/slideshow.js"></script>
     <script src="static/idyll_index.js"></script>
   </body>
 </html>
