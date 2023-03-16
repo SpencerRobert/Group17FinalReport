@@ -1,6 +1,6 @@
 let called = false
 document.addEventListener('scroll', e => {
-  if (document.documentElement.scrollTop >= 12000) {
+  if (document.documentElement.scrollTop >= 11185) {
     if (called) return
     called = true
     calledEvent()
@@ -8,8 +8,6 @@ document.addEventListener('scroll', e => {
 })
 
 function calledEvent() {
-	
-	console.log("TRIGGERED");
   
   var s5 = document.getElementById("state5");
   var s4 = document.getElementById("state4");
