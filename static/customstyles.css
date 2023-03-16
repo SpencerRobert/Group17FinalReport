@@ -85,3 +85,13 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #222222;
+    color: white;
+    padding: 50px;
+    font-size: 20px;
+}
