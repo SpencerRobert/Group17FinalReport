@@ -95,3 +95,10 @@ div.sticky {
     padding: 50px;
     font-size: 20px;
 }
+
+.hButton:hover {
+	
+	background-color: #222222;
+	color: white;
+	
+}
