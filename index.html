@@ -222,6 +222,15 @@ Your browser does not support the video tag.
 
 <h2>System Map</h2>
 
+<br><br>
+
+<p>
+Given the nature of our HCI artifact and its purpose, the system which it operates would be a <b>simple</b> type. Below is a map 
+of the system states and how they transition to and from one another. 
+</p>
+
+<br><br>
+
 
 <div id="state1" class="sticky">State 1</div>
 
@@ -367,11 +376,11 @@ In terms of navigating the system, state 5 is identical to state 2, users can:
 
 <script src="static/map.js"></script>
 
-<br><br><br><br><br><br><br>
+<br><br><br>
 
 <h2>Design Principles</h2>
 
-<br><br>
+<br>
 
 <p>
 Over the course of our redesign we used many of the design principles we've learned throughout the course to follow the best practice and deliver a 
@@ -389,7 +398,7 @@ high quality user experience. Select 1 of the 20 listed in the select element to
 </select>
 
 
-<br><br><br><br><br>
+<br><br>
 
 
 <div contenteditable id="chalkboard">
@@ -433,11 +442,42 @@ Here is how we followed some of Nielsen Norman group's 10 evaluation heuristics:
  
  <h2>Our Suggestions for Future Improvement</h2>
  
- <br><br>
+ <br>
  
  <p>
- There are still many improvements that can be made to this extension to create a better user experience ...
+ There are still many improvements that can be made to this extension to create a better user experience. Hover over the blurred out points to see
+ some of our most notable suggestions:
  </p>
+ 
+ <br><br>
+ 
+ <div class="glass" onmouseover="blurPanel(this);" onmouseleave="unblurPanel(this);" >
+ 
+ - Improve the quality of our user interface. Our group learned a lot about CSS when developing this interactive report, however during 
+ development of our final prototype we were still inexperienced and did not make use of good styling to create a more inviting interface. 
+ 
+ </div>
+ 
+ <br><br>
+ 
+ <div class="glass" onmouseover="blurPanel(this);" onmouseleave="unblurPanel(this);" >
+ 
+- Find way to improve the affordances of our controls. It is not inheritly obvious as to how to control the reading line from a user perspective. Finding a way to implement 
+a system of control that leads to more obvious affordances could eliminate a lot of potnetial confusion the user might experience when first working with our product. 
+ 
+ </div>
+ 
+ <br><br>
+ 
+ <div class="glass" onmouseover="blurPanel(this);" onmouseleave="unblurPanel(this);" >
+ 
+ - Address more specific user-reported issues. Some users complained the line can't render correctly on certain webpages and other site specific issues that can tarnish user experience. 
+ If anyone contributed to the development of this HCI artifact in the future, we think it would be beneficial to 
+ 
+ </div>
+ 
+ <script src="static/blur.js"></script>
+
  
  <br><br><br><br><br><br>
  

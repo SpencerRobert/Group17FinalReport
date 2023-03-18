@@ -138,3 +138,9 @@ div.sticky {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.glass {
+
+filter: blur(4px);
+	
+}
