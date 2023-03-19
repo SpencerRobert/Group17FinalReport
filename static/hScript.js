@@ -8,6 +8,33 @@ var h2 = "Our group believes we did a good job of implementing Jakob Neilson's s
 var h3 = "During our heuristic evaluation of the system, our group realized we could have done a better job implementing Jakob Neilson's third usability heuristic, User Control & Freedom, in our HCI artifact. We think that we did a good job of allowing users to in a sense free themselves of the system by having a quick commmand to toggle the reading line off. However, a user would only know how to execute that command if they hover over the Improved Reading Line icon to see the tool tip which explains the user must press ctrl + alt + - to do so. We could have better implemented this heuristic by creating a shut off method that would be more obvious to users. We also realized users may be hesistant to refresh their browser if they made adjustments to the line that they didn't want to lose. An option to restore those properties could have eliminated that issue and made for a better implementation of this heuristic.";
 
 
+function updateButton(val) {
+	
+	
+	switch (val) {
+		
+		case '1':
+			document.getElementById("hbtn").textContent = "1. Visibility of System Status";
+			break;
+		
+		case '2':
+			document.getElementById("hbtn").textContent = "2. Match Between the System and the Real World";
+			break;
+			
+		case '3':
+			document.getElementById("hbtn").textContent = "3. User Control & Freedom";
+			break;
+		
+		default:
+			document.getElementById("hbtn").textContent = "1. Visibility of System Status";
+	}	
+	
+	document.getElementById("hbtn").value = val;
+	
+	
+}
+
+
 function updateHPanel(val) {
 	
 	
@@ -36,13 +63,9 @@ function updateHPanel(val) {
 
 async function replaceText(newText) {
 	
-	btn1 = document.getElementById('btn1');
-	btn2 = document.getElementById('btn2');
-	btn3 = document.getElementById('btn3');
+	hbtn = document.getElementById('hbtn');
 	
-	btn1.disabled = true;
-	btn2.disabled = true;
-	btn3.disabled = true;
+	hbtn.disabled = true;
 	
 	var hPanel = document.getElementById("hPanel");
 	var oldLength = hPanel.textContent.length;
@@ -73,9 +96,7 @@ function fillPanel(newText) {
 	fillInterval = setInterval(function () {
 		
 		if (t2 > newLength) {
-			btn1.disabled = false;
-			btn2.disabled = false;
-			btn3.disabled = false;
+			hbtn.disabled = false;
 			clearInterval(fillInterval);
 		}
 		else {

@@ -200,7 +200,7 @@ further illustrate our idea:
 
 <p>
 With our design phase winding up, we began to develop our prototype. Given the time frame of this project, we felt it wouldn't make sense to spend time creating any sort of
-low-fidelity prototypes. We dove right into coding and took an evolutionary prototyping approach where we continuously added new features and tested getting closer and closer to the final product. 
+low-fidelity prototypes. We dove right into coding and took an evolutionary prototyping approach where we continuously added new features and tested, getting closer and closer to the final product. 
 The end result was a high-fidelity prototype that looks and behaves very similar to our intended final product. Feasibility and technical issues resulted in some aspects of the designs being changed
 however we kept the design principles we learned from class in mind and made good use of them throughout.  
 </p>
@@ -222,7 +222,7 @@ Your browser does not support the video tag.
 
 <h2>System Map</h2>
 
-<br><br>
+<br>
 
 <p>
 Given the nature of our HCI artifact and its purpose, the system which it operates would be a <b>simple</b> type. Below is a map 
@@ -387,7 +387,7 @@ Over the course of our redesign we used many of the design principles we've lear
 high quality user experience. Select 1 of the 20 listed in the select element to see a description as to how we used them throughout the project:
 </p>
 
-<br><br>
+<br>
 
 
 <select id="selectDP">
@@ -440,13 +440,17 @@ so we knew it would be important to follow heuristics to assure that generally w
 Here is how we followed some of Nielsen Norman group's 10 evaluation heuristics:
 </p>
 
+<br>
+
+<input id="hButtonNum" onChange="updateButton(this.value)" onKeyDown="return false" type="number" min="1" max="3" style="background-color: #222222; color: white; position:absolute; left:420px;"/>
+
 <br><br>
 
-<button id="btn1" onclick="updateHPanel(this.value)" value="1" class="hButton">1. Visibility of System Status</button><button id="btn2" onclick="updateHPanel(this.value)" value="2" class="hButton">2. Match Between the System and the Real World</button><button id="btn3" onclick="updateHPanel(this.value)" value="3" class="hButton">3. User Control & Freedom</button>
+<button id="hbtn" onclick="updateHPanel(this.value)" value="1" class="hButton">1. Visability of System Status</button>
 
 <script src="static/hScript.js"></script>
 
-<br><br>
+<br>
 
 <div id="hPanel" style="font-family: 'Lucida Console'; height: 600px; background-color: #222222; color: white; padding:20px;">
 
@@ -454,7 +458,7 @@ Select a heuristic!
 
 </div>
 
- <br><br>
+ <br>
  
  
  <h2>Our Suggestions for Future Improvement</h2>
@@ -506,7 +510,7 @@ a system of control that leads to more obvious affordances could eliminate a lot
  <script src="static/blur.js"></script>
 
  
- <br><br><br><br><br><br>
+ <br><br>
  
  
  </div></div></div></div>
